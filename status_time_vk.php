@@ -21,7 +21,7 @@ $status = file_get_contents('https://api.vk.com/method/' . $config->status_get .
 
 $status = json_decode($status);
 $status = $status->response->text;
-var_dump($status); // Парсим текущий статус пользователя.
+var_dump($status); // Выводим полученный статус.
 
 $time = new DateTimeImmutable('now', new DateTimeZone('Europe/Samara')); // Не забываем изменить на свой часовой пояс.
 
