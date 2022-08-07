@@ -13,7 +13,7 @@ class Config
 
 $config = new Config();
 
-echo '<a href="https://oauth.vk.com/authorize?client_id=' . $config->client_id . '&display=page&redirect_uri=' . $config->redirect_uri . '&scope=' . $config->scope . '&response_type=token&v=5.131">Get Access Token</a><br>'; // Ссылка для получения access_token.
+echo '<a href="https://oauth.vk.com/authorize?client_id=' . $config->client_id . '&display=page&redirect_uri=' . $config->redirect_uri . '&scope=' . $config->scope . '&response_type=token&v=' . $config->v_api . '">Get Access Token</a><br>'; // Ссылка для получения access_token.
 
 $access_token = '...'; // Вписываем полученный токен из URL.
 
