@@ -25,4 +25,4 @@ var_dump($status); // Парсим текущий статус пользова�
 
 $time = new DateTimeImmutable('now', new DateTimeZone('Europe/Samara')); // Не забываем изменить на свой часовой пояс.
 
-file_get_contents('https://api.vk.com/method/status.set?text=' . urlencode('Время в Самаре ') . $time->format('H:i') . '&access_token=' . $access_token . '&v=' . $config->v_api); // Устанавливаем новый статус пользователю.
+file_get_contents('https://api.vk.com/method/' . $config->status_set . '?text=' . urlencode('Время в Самаре ') . $time->format('H:i') . '&access_token=' . $access_token . '&v=' . $config->v_api); // Устанавливаем новый статус пользователю.
