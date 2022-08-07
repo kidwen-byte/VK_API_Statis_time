@@ -5,9 +5,9 @@ class Config
     public $client_id = '...'; // id вашего Standalone приложения.
     public $user_id = '...'; // id пользователя.
     public $redirect_uri = 'https://oauth.vk.com/blank.html'; // Необходимо использовать redirect_uri по умолчанию: https://oauth.vk.com/blank.html
-    public $scope = 'status, offline'; // Параметры доступа; status - Доступ к статусу пользователя, offline - бессрочный access_token.
+    public $scope = 'status,offline'; // Параметры доступа; status - Доступ к статусу пользователя, offline - бессрочный access_token.
     public $status_get = 'status.get'; // Параметр метода (Получаем статус пользователя)
-    public $status_set = 'status.get'; // Параметр метода (Устанавливаем новый статус пользователя)
+    public $status_set = 'status.set'; // Параметр метода (Устанавливаем новый статус пользователя)
     public $v_api = '5.131'; // Версия API VK
 }
 
